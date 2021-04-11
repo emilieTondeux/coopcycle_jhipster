@@ -1,0 +1,23 @@
+{
+  "coopcycleJhipsterApp": {
+    "role": {
+      "home": {
+        "title": "Roles",
+        "createLabel": "Ստեղծել նոր Role",
+        "createOrEditLabel": "Ստեղծել կամ փոփոխել Role",
+        "notFound": "No Roles found"
+      },
+      "created": "Նոր Role ստեղծված է {{ param }} նունացուցիչով",
+      "updated": "Role թարմացվաց է {{ param }} նունացուցիչով",
+      "deleted": "Role հեռացված է {{ param }}  նունացուցիչով",
+      "delete": {
+        "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Role {{ id }}?"
+      },
+      "detail": {
+        "title": "Role"
+      },
+      "role": "Role",
+      "acount": "Acount"
+    }
+  }
+}

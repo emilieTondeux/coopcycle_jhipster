@@ -48,6 +48,25 @@ public class CacheConfiguration {
             createCache(cm, fr.polytech.info4.domain.User.class.getName());
             createCache(cm, fr.polytech.info4.domain.Authority.class.getName());
             createCache(cm, fr.polytech.info4.domain.User.class.getName() + ".authorities");
+            createCache(cm, fr.polytech.info4.domain.Acount.class.getName());
+            createCache(cm, fr.polytech.info4.domain.Acount.class.getName() + ".baskets");
+            createCache(cm, fr.polytech.info4.domain.Acount.class.getName() + ".paymentSys");
+            createCache(cm, fr.polytech.info4.domain.Role.class.getName());
+            createCache(cm, fr.polytech.info4.domain.Role.class.getName() + ".acounts");
+            createCache(cm, fr.polytech.info4.domain.Product.class.getName());
+            createCache(cm, fr.polytech.info4.domain.Product.class.getName() + ".baskets");
+            createCache(cm, fr.polytech.info4.domain.Basket.class.getName());
+            createCache(cm, fr.polytech.info4.domain.Basket.class.getName() + ".restaurants");
+            createCache(cm, fr.polytech.info4.domain.Basket.class.getName() + ".products");
+            createCache(cm, fr.polytech.info4.domain.Restaurant.class.getName());
+            createCache(cm, fr.polytech.info4.domain.Restaurant.class.getName() + ".products");
+            createCache(cm, fr.polytech.info4.domain.Restaurant.class.getName() + ".runs");
+            createCache(cm, fr.polytech.info4.domain.Restaurant.class.getName() + ".baskets");
+            createCache(cm, fr.polytech.info4.domain.Run.class.getName());
+            createCache(cm, fr.polytech.info4.domain.PaymentSys.class.getName());
+            createCache(cm, fr.polytech.info4.domain.PaymentSys.class.getName() + ".acounts");
+            createCache(cm, fr.polytech.info4.domain.Cooperative.class.getName());
+            createCache(cm, fr.polytech.info4.domain.Cooperative.class.getName() + ".restaurants");
             // jhipster-needle-ehcache-add-entry
         };
     }

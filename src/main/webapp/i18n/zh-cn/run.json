@@ -1,0 +1,26 @@
+{
+  "coopcycleJhipsterApp": {
+    "run": {
+      "home": {
+        "title": "Runs",
+        "createLabel": "创建新 Run",
+        "createOrEditLabel": "创建或编辑 Run",
+        "notFound": "No Runs found"
+      },
+      "created": "Run {{ param }} 创建成功",
+      "updated": "Run {{ param }} 更新成功",
+      "deleted": "Run {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Run {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Run"
+      },
+      "clientName": "Client Name",
+      "runnerName": "Runner Name",
+      "method": "Method",
+      "basket": "Basket",
+      "restaurant": "Restaurant"
+    }
+  }
+}

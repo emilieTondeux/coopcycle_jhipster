@@ -1,0 +1,26 @@
+{
+  "coopcycleJhipsterApp": {
+    "run": {
+      "home": {
+        "title": "Runs",
+        "createLabel": "Ստեղծել նոր Run",
+        "createOrEditLabel": "Ստեղծել կամ փոփոխել Run",
+        "notFound": "No Runs found"
+      },
+      "created": "Նոր Run ստեղծված է {{ param }} նունացուցիչով",
+      "updated": "Run թարմացվաց է {{ param }} նունացուցիչով",
+      "deleted": "Run հեռացված է {{ param }}  նունացուցիչով",
+      "delete": {
+        "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Run {{ id }}?"
+      },
+      "detail": {
+        "title": "Run"
+      },
+      "clientName": "Client Name",
+      "runnerName": "Runner Name",
+      "method": "Method",
+      "basket": "Basket",
+      "restaurant": "Restaurant"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity Basket.
+    -->
+    <changeSet id="20210411073520-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="basket_id"
+                                 baseTableName="basket_restaurant"
+                                 constraintName="fk_basket_restaurant_basket_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="basket"/>
+
+        <addForeignKeyConstraint baseColumnNames="restaurant_id"
+                                 baseTableName="basket_restaurant"
+                                 constraintName="fk_basket_restaurant_restaurant_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="restaurant"/>
+        
+        <addForeignKeyConstraint baseColumnNames="basket_id"
+                                 baseTableName="basket_product"
+                                 constraintName="fk_basket_product_basket_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="basket"/>
+
+        <addForeignKeyConstraint baseColumnNames="product_id"
+                                 baseTableName="basket_product"
+                                 constraintName="fk_basket_product_product_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="product"/>
+        
+        <addForeignKeyConstraint baseColumnNames="acount_id"
+                                 baseTableName="basket"
+                                 constraintName="fk_basket_acount_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="acount"/>
+
+    </changeSet>
+</databaseChangeLog>

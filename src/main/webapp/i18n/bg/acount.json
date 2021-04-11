@@ -1,0 +1,33 @@
+{
+  "coopcycleJhipsterApp": {
+    "acount": {
+      "home": {
+        "title": "Acounts",
+        "createLabel": "Създайте нов Acount",
+        "createOrEditLabel": "Създайте или редактирайте Acount",
+        "notFound": "Acounts не са намерени"
+      },
+      "created": "Създаден е нов Acount с идентификатор {{ param }}",
+      "updated": "Acount с идентификатор {{ param }} e oбновен",
+      "deleted": "Acount с идентификатор {{ param }} е изтрит",
+      "delete": {
+        "question": "Наистина ли искате да изтриете Acount {{ id }}?"
+      },
+      "detail": {
+        "title": "Acount"
+      },
+      "name": "Name",
+      "surname": "Surname",
+      "age": "Age",
+      "accountID": "Account ID",
+      "adress": "Adress",
+      "basket": "Basket",
+      "restaurant": "Restaurant",
+      "role": "Role",
+      "paymentSys": "Payment Sys",
+      "help": {
+        "name": "fieldName"
+      }
+    }
+  }
+}

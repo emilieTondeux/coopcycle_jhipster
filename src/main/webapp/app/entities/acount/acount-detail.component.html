@@ -1,0 +1,52 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="acount">
+            <h2><span jhiTranslate="coopcycleJhipsterApp.acount.detail.title">Acount</span> {{ acount.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="coopcycleJhipsterApp.acount.name" [ngbTooltip]="'coopcycleJhipsterApp.acount.help.name' | translate">Name</span></dt>
+                <dd>
+                    <span>{{ acount.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="coopcycleJhipsterApp.acount.surname">Surname</span></dt>
+                <dd>
+                    <span>{{ acount.surname }}</span>
+                </dd>
+                <dt><span jhiTranslate="coopcycleJhipsterApp.acount.age">Age</span></dt>
+                <dd>
+                    <span>{{ acount.age }}</span>
+                </dd>
+                <dt><span jhiTranslate="coopcycleJhipsterApp.acount.accountID">Account ID</span></dt>
+                <dd>
+                    <span>{{ acount.accountID }}</span>
+                </dd>
+                <dt><span jhiTranslate="coopcycleJhipsterApp.acount.adress">Adress</span></dt>
+                <dd>
+                    <span>{{ acount.adress }}</span>
+                </dd>
+                <dt><span jhiTranslate="coopcycleJhipsterApp.acount.role">Role</span></dt>
+                <dd>
+                    <div *ngIf="acount.role">
+                        <a [routerLink]="['/role', acount.role?.id, 'view']">{{ acount.role?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/acount', acount.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

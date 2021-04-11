@@ -1,0 +1,27 @@
+{
+  "coopcycleJhipsterApp": {
+    "basket": {
+      "home": {
+        "title": "Baskets",
+        "createLabel": "Создать новый Basket",
+        "createOrEditLabel": "Создать или отредактировать Basket",
+        "notFound": "No Baskets found"
+      },
+      "created": "Новый Basket создан с идентификатором {{ param }}",
+      "updated": "Basket обновлен с идентификатором {{ param }}",
+      "deleted": "Basket удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Basket {{ id }}?"
+      },
+      "detail": {
+        "title": "Basket"
+      },
+      "nbElements": "Nb Elements",
+      "price": "Price",
+      "restaurant": "Restaurant",
+      "product": "Product",
+      "run": "Run",
+      "acount": "Acount"
+    }
+  }
+}

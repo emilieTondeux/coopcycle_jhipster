@@ -1,0 +1,33 @@
+{
+  "name": "Role",
+  "fields": [
+    {
+      "fieldName": "role",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "minlength",
+        "required"
+      ],
+      "fieldValidateRulesMinlength": "1"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "acount",
+      "otherEntityRelationshipName": "role",
+      "relationshipName": "acount"
+    }
+  ],
+  "changelogDate": "20210411073320",
+  "entityTableName": "role",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

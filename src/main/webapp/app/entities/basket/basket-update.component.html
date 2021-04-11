@@ -1,0 +1,80 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-basket-heading" jhiTranslate="coopcycleJhipsterApp.basket.home.createOrEditLabel">Create or edit a Basket</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="coopcycleJhipsterApp.basket.nbElements" for="field_nbElements">Nb Elements</label>
+                    <input type="number" class="form-control" name="nbElements" id="field_nbElements"
+                           formControlName="nbElements"/>
+                    <div *ngIf="editForm.get('nbElements')!.invalid && (editForm.get('nbElements')!.dirty || editForm.get('nbElements')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('nbElements')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.get('nbElements')?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="coopcycleJhipsterApp.basket.price" for="field_price">Price</label>
+                    <input type="number" class="form-control" name="price" id="field_price"
+                           formControlName="price"/>
+                    <div *ngIf="editForm.get('price')!.invalid && (editForm.get('price')!.dirty || editForm.get('price')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('price')?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.get('price')?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label jhiTranslate="coopcycleJhipsterApp.basket.restaurant" for="field_restaurants">Restaurant</label>
+                    <select class="form-control" id="field_restaurants" multiple name="restaurants" formControlName="restaurants">
+                        <option [ngValue]="getSelected(editForm.get('restaurants')!.value, restaurantOption)" *ngFor="let restaurantOption of restaurants; trackBy: trackById">{{ restaurantOption.id }}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label jhiTranslate="coopcycleJhipsterApp.basket.product" for="field_products">Product</label>
+                    <select class="form-control" id="field_products" multiple name="products" formControlName="products">
+                        <option [ngValue]="getSelected(editForm.get('products')!.value, productOption)" *ngFor="let productOption of products; trackBy: trackById">{{ productOption.id }}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="coopcycleJhipsterApp.basket.acount" for="field_acount">Acount</label>
+                    <select class="form-control" id="field_acount" name="acount" formControlName="acount">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="acountOption.id === editForm.get('acount')!.value?.id ? editForm.get('acount')!.value : acountOption" *ngFor="let acountOption of acounts; trackBy: trackById">{{ acountOption.id }}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

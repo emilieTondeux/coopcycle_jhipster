@@ -1,0 +1,52 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="basket">
+            <h2><span jhiTranslate="coopcycleJhipsterApp.basket.detail.title">Basket</span> {{ basket.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="coopcycleJhipsterApp.basket.nbElements">Nb Elements</span></dt>
+                <dd>
+                    <span>{{ basket.nbElements }}</span>
+                </dd>
+                <dt><span jhiTranslate="coopcycleJhipsterApp.basket.price">Price</span></dt>
+                <dd>
+                    <span>{{ basket.price }}</span>
+                </dd>
+                <dt><span jhiTranslate="coopcycleJhipsterApp.basket.restaurant">Restaurant</span></dt>
+                <dd>
+                    <span *ngFor="let restaurant of basket.restaurants; let last = last">
+                        <a [routerLink]="['/restaurant', restaurant?.id, 'view']">{{ restaurant.id }}</a>{{ last ? '' : ', ' }}
+                    </span>
+                </dd>
+                <dt><span jhiTranslate="coopcycleJhipsterApp.basket.product">Product</span></dt>
+                <dd>
+                    <span *ngFor="let product of basket.products; let last = last">
+                        <a [routerLink]="['/product', product?.id, 'view']">{{ product.id }}</a>{{ last ? '' : ', ' }}
+                    </span>
+                </dd>
+                <dt><span jhiTranslate="coopcycleJhipsterApp.basket.acount">Acount</span></dt>
+                <dd>
+                    <div *ngIf="basket.acount">
+                        <a [routerLink]="['/acount', basket.acount?.id, 'view']">{{ basket.acount?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/basket', basket.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

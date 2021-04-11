@@ -1,0 +1,25 @@
+{
+  "coopcycleJhipsterApp": {
+    "paymentSys": {
+      "home": {
+        "title": "Payment Sys",
+        "createLabel": "Payment Sys အသစ်ထည့်မည်",
+        "createOrEditLabel": "Payment Sys အသစ်ထည့်ခြင်း (သို့) ပြုပြင်ခြင်း",
+        "notFound": "No Payment Sys found"
+      },
+      "created": "{{ param }} အိုင်ဒီဖြင့် Payment Sys အသစ်တစ်ခုအား ထည့်ပြီးပါပြီ။",
+      "updated": "{{ param }} အိုင်ဒီဖြင့် Payment Sys တစ်ခုအား ပြုပြင်ပြီးပါပြီ။",
+      "deleted": "{{ param }} အိုင်ဒီဖြင့် Payment Sys တစ်ခုအား ဖျက်ပြီးပါပြီ။",
+      "delete": {
+        "question": "Payment Sys {{ id }} အား ဖျက်ပါမည်။ သေချာပါသလား?"
+      },
+      "detail": {
+        "title": "Payment Sys"
+      },
+      "crediteur": "Crediteur",
+      "debiteur": "Debiteur",
+      "method": "Method",
+      "acount": "Acount"
+    }
+  }
+}

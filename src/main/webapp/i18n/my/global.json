@@ -7,6 +7,14 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities များ",
+        "acount": "Acount",
+        "role": "Role",
+        "product": "Product",
+        "basket": "Basket",
+        "restaurant": "Restaurant",
+        "run": "Run",
+        "paymentSys": "Payment Sys",
+        "cooperative": "Cooperative",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

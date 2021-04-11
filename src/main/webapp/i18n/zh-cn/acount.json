@@ -1,0 +1,33 @@
+{
+  "coopcycleJhipsterApp": {
+    "acount": {
+      "home": {
+        "title": "Acounts",
+        "createLabel": "创建新 Acount",
+        "createOrEditLabel": "创建或编辑 Acount",
+        "notFound": "No Acounts found"
+      },
+      "created": "Acount {{ param }} 创建成功",
+      "updated": "Acount {{ param }} 更新成功",
+      "deleted": "Acount {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Acount {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Acount"
+      },
+      "name": "Name",
+      "surname": "Surname",
+      "age": "Age",
+      "accountID": "Account ID",
+      "adress": "Adress",
+      "basket": "Basket",
+      "restaurant": "Restaurant",
+      "role": "Role",
+      "paymentSys": "Payment Sys",
+      "help": {
+        "name": "fieldName"
+      }
+    }
+  }
+}

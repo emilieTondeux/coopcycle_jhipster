@@ -1,0 +1,25 @@
+{
+  "coopcycleJhipsterApp": {
+    "paymentSys": {
+      "home": {
+        "title": "Payment Sys",
+        "createLabel": "Create a new Payment Sys",
+        "createOrEditLabel": "Create or edit a Payment Sys",
+        "notFound": "No Payment Sys found"
+      },
+      "created": "A new Payment Sys is created with identifier {{ param }}",
+      "updated": "A Payment Sys is updated with identifier {{ param }}",
+      "deleted": "A Payment Sys is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Payment Sys {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment Sys"
+      },
+      "crediteur": "Crediteur",
+      "debiteur": "Debiteur",
+      "method": "Method",
+      "acount": "Acount"
+    }
+  }
+}

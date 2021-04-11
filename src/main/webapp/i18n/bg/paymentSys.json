@@ -1,0 +1,25 @@
+{
+  "coopcycleJhipsterApp": {
+    "paymentSys": {
+      "home": {
+        "title": "Payment Sys",
+        "createLabel": "Създайте нов Payment Sys",
+        "createOrEditLabel": "Създайте или редактирайте Payment Sys",
+        "notFound": "Payment Sys не са намерени"
+      },
+      "created": "Създаден е нов Payment Sys с идентификатор {{ param }}",
+      "updated": "Payment Sys с идентификатор {{ param }} e oбновен",
+      "deleted": "Payment Sys с идентификатор {{ param }} е изтрит",
+      "delete": {
+        "question": "Наистина ли искате да изтриете Payment Sys {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment Sys"
+      },
+      "crediteur": "Crediteur",
+      "debiteur": "Debiteur",
+      "method": "Method",
+      "acount": "Acount"
+    }
+  }
+}

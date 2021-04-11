@@ -1,0 +1,33 @@
+{
+  "coopcycleJhipsterApp": {
+    "acount": {
+      "home": {
+        "title": "Acounts",
+        "createLabel": "Créer un nouveau Acount",
+        "createOrEditLabel": "Créer ou éditer un Acount",
+        "notFound": "Aucun Acount trouvé"
+      },
+      "created": "Un nouveau Acount a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Acount avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Acount avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Acount {{ id }} ?"
+      },
+      "detail": {
+        "title": "Acount"
+      },
+      "name": "Name",
+      "surname": "Surname",
+      "age": "Age",
+      "accountID": "Account ID",
+      "adress": "Adress",
+      "basket": "Basket",
+      "restaurant": "Restaurant",
+      "role": "Role",
+      "paymentSys": "Payment Sys",
+      "help": {
+        "name": "fieldName"
+      }
+    }
+  }
+}
