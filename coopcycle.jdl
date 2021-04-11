@@ -1,0 +1,77 @@
+/**
+ * The  Compte entity.
+ * @author A true hipster
+ */
+entity  Acount {
+    /** fieldName */
+    name String required
+    surname String required
+    age Integer min(0) max(120)
+    accountID String maxlength(16) required
+    adress String required
+}
+
+entity Role{
+    role String minlength(1) required
+}
+
+entity Product{
+    name String required
+    price Integer min(0) required
+    quantity Integer min(0) required
+}
+
+entity Basket{
+    nbElements Integer required
+    price Integer required
+}
+
+entity Restaurant{
+    name String required
+    adress String required
+}
+
+entity Run{
+    clientName String required
+    runnerName String required
+    method String required
+}
+
+entity PaymentSys{
+    crediteur String required
+    debiteur String required
+    method String required
+}
+
+entity Cooperative{
+    name String required
+    members String
+}
+
+/**
+ * One to one relationship.
+ */
+relationship OneToOne {
+    Run to Basket
+    Restaurant to Acount
+}
+
+/**
+ * Many to one relationship.
+ */
+relationship OneToMany {
+    Role to Acount
+    Restaurant to Product
+    Restaurant to Run
+    Acount to Basket
+    Cooperative to Restaurant
+}
+
+/**
+ * Many to many relationship.
+ */
+relationship ManyToMany {
+    Basket to Restaurant
+    PaymentSys to Acount
+    Basket to Product
+}
