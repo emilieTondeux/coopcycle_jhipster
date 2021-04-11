@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "fr.polytech.info4",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "monolith",
+    "baseName": "coopcycle_jhipster",
+    "packageName": "fr.polytech.info4",
+    "packageFolder": "fr/polytech/info4",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "OWNlZmVkNDRiYjUwMTQzNjdlZjE2ZDQ5YjU2YzVkM2U3NmE5ZjE5ZGI1ZTRjZGNmMjRlMTYwMzA2YjI1YjdmYmE3MjIwNmJiMjYxNzk1ZmMwZTEyN2U1ZGU0ZTg5MTU2ZTM4NDE0YmU1OGQ5Y2Y2ZDRjZmQ5ODdlMzMzNjkzNzQ=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1618126150387,
+    "testFrameworks": ["gatling", "cucumber", "protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": ["fr", "hy", "bg", "zh-cn", "en", "my", "ru"],
+    "blueprints": []
+  }
+}
