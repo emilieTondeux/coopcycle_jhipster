@@ -1,0 +1,1 @@
+# coopcycle_jhipster
